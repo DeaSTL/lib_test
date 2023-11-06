@@ -129,30 +129,6 @@ lib_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib_test.dir/build.make CMakeFiles/lib_test.dir/build
 .PHONY : lib_test/fast
 
-src/lib-test.o: src/lib-test.cpp.o
-.PHONY : src/lib-test.o
-
-# target to build an object file
-src/lib-test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib_test.dir/build.make CMakeFiles/lib_test.dir/src/lib-test.cpp.o
-.PHONY : src/lib-test.cpp.o
-
-src/lib-test.i: src/lib-test.cpp.i
-.PHONY : src/lib-test.i
-
-# target to preprocess a source file
-src/lib-test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib_test.dir/build.make CMakeFiles/lib_test.dir/src/lib-test.cpp.i
-.PHONY : src/lib-test.cpp.i
-
-src/lib-test.s: src/lib-test.cpp.s
-.PHONY : src/lib-test.s
-
-# target to generate assembly for a file
-src/lib-test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lib_test.dir/build.make CMakeFiles/lib_test.dir/src/lib-test.cpp.s
-.PHONY : src/lib-test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +138,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lib_test"
-	@echo "... src/lib-test.o"
-	@echo "... src/lib-test.i"
-	@echo "... src/lib-test.s"
 .PHONY : help
 
 
