@@ -5,15 +5,13 @@ set(CMAKE_CXX_STANDARD 20)
       
 
 file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR}
-  "include/**.h"
-  "include/**.hpp"
   "src/**.cpp"
   "src/**.c"
   )
       
 include(FetchContent)
 
-    
+message(${SOURCES}) 
 
 add_library(lib_test STATIC ${SOURCES})
 
